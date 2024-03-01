@@ -1,0 +1,66 @@
+{
+	"name": "Monstro",
+	"plugin-id": "Sprite",
+	"sid": 547095517036636,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Bullet",
+			"name": "Projétil",
+			"sid": 109922274132422
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 142,
+						"height": 102,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5912314,
+						"collisionPoly": {
+							"points": [
+								0.7323943661971831,
+								0.029411764705882353,
+								0.7746478873239436,
+								0.029411764705882353,
+								0.9859154929577465,
+								0.12745098039215685,
+								0.9507042253521126,
+								0.9019607843137255,
+								0.7605633802816901,
+								0.9705882352941176,
+								0.7183098591549296,
+								0.9705882352941176,
+								0.07746478873239436,
+								0.6078431372549019,
+								0.02112676056338028,
+								0.5490196078431373,
+								0.035211267605633804,
+								0.46078431372549017
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 403501755014829,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

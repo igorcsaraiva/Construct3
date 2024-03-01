@@ -1,0 +1,68 @@
+{
+	"name": "Bala",
+	"plugin-id": "Sprite",
+	"sid": 808687349904505,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Bullet",
+			"name": "Projétil",
+			"sid": 838692824298453
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 25,
+						"height": 12,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2069784,
+						"collisionPoly": {
+							"points": [
+								0.08,
+								0.08333333333333333,
+								0.72,
+								0.08333333333333333,
+								0.8,
+								0.16666666666666666,
+								0.92,
+								0.4166666666666667,
+								0.92,
+								0.5833333333333334,
+								0.8,
+								0.8333333333333334,
+								0.72,
+								0.9166666666666666,
+								0.08,
+								0.9166666666666666,
+								0.04,
+								0.8333333333333334,
+								0.04,
+								0.16666666666666666
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 314409291186592,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

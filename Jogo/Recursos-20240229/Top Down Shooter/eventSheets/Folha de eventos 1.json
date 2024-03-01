@@ -1,0 +1,359 @@
+{
+	"name": "Folha de eventos 1",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "Pontos",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 314383810954473
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-outside-layout",
+					"objectClass": "Monstro",
+					"sid": 867322056045454
+				}
+			],
+			"actions": [
+				{
+					"id": "set-angle-toward-position",
+					"objectClass": "Monstro",
+					"sid": 765107202133418,
+					"parameters": {
+						"x": "Jogador.X",
+						"y": "Jogador.Y"
+					}
+				}
+			],
+			"sid": 926158239839964
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 742696061260770
+				}
+			],
+			"actions": [],
+			"sid": 980115109915029
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 713905255698036,
+					"parameters": {
+						"interval-seconds": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 517552707014840,
+					"parameters": {
+						"object-to-create": "Monstro",
+						"layer": "0",
+						"x": "random(0,1708)",
+						"y": "-150",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 480182574241485,
+					"parameters": {
+						"object-to-create": "Monstro",
+						"layer": "0",
+						"x": "random(0,1708)",
+						"y": "1200",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 540204427666832,
+					"parameters": {
+						"object-to-create": "Monstro",
+						"layer": "0",
+						"x": "-150",
+						"y": "random(0,960)",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 565018008866315,
+					"parameters": {
+						"object-to-create": "Monstro",
+						"layer": "0",
+						"x": "1900",
+						"y": "random(0,960)",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 219966241706804
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 713702569567217,
+					"parameters": {
+						"interval-seconds": "5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 422842299107072,
+					"parameters": {
+						"object-to-create": "Monstro",
+						"layer": "0",
+						"x": "random(0,1708)",
+						"y": "-150",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 893339025120476,
+					"parameters": {
+						"object-to-create": "Monstro",
+						"layer": "0",
+						"x": "random(0,1708)",
+						"y": "1200",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 932446960923318,
+					"parameters": {
+						"object-to-create": "Monstro",
+						"layer": "0",
+						"x": "-150",
+						"y": "random(0,960)",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 398629195908926,
+					"parameters": {
+						"object-to-create": "Monstro",
+						"layer": "0",
+						"x": "1900",
+						"y": "random(0,960)",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 383552226726295
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-click",
+					"objectClass": "Mouse",
+					"sid": 762239494062879,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Jogador",
+					"sid": 955273171659394,
+					"parameters": {
+						"object": "Bala",
+						"layer": "0",
+						"image-point": "1",
+						"create-hierarchy": false
+					}
+				}
+			],
+			"sid": 553426549534669
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 362518521803008
+				}
+			],
+			"actions": [
+				{
+					"id": "set-angle-toward-position",
+					"objectClass": "Jogador",
+					"sid": 161080889982867,
+					"parameters": {
+						"x": "Mouse.X",
+						"y": "Mouse.y"
+					}
+				}
+			],
+			"sid": 858958636510580
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Bala",
+					"sid": 275244134605284,
+					"parameters": {
+						"object": "Monstro"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Monstro",
+					"sid": 397719614109730
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Bala",
+					"sid": 928690300812118
+				},
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Monstro",
+					"sid": 395981323771970,
+					"parameters": {
+						"object": "explosão",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 589439578065537,
+					"parameters": {
+						"variable": "Pontos",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 441381740942876
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Jogador",
+					"sid": 496907717711589,
+					"parameters": {
+						"object": "Monstro"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Jogador",
+					"sid": 852698958687140
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 296149973592444,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 901750241060586
+				}
+			],
+			"sid": 575382231042958
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 459330091297681
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 667580297460814,
+					"parameters": {
+						"variable": "Pontos",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 635516772516451
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 934622439734549
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "Texto",
+					"sid": 808335310467445,
+					"parameters": {
+						"text": "\"Pontos \"&Pontos"
+					}
+				}
+			],
+			"sid": 740806227150889
+		}
+	],
+	"sid": 786983918031346
+}
